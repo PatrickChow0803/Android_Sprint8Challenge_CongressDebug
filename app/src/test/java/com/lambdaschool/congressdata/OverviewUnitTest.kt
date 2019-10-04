@@ -19,8 +19,9 @@ class OverviewUnitTest{
     }
      */
 
+    // First Test
     @Test
-    fun testingConstructor(){
+    fun firstTestingConstructor(){
         val firstName = "Patrick"
         val middleName = "null"
         val lastName = "Chow"
@@ -34,5 +35,23 @@ class OverviewUnitTest{
         assertEquals("N/A", test.party)
         assertEquals("NY", test.state)
         assertEquals("123", test.id)
+    }
+
+    // Second Test
+    @Test
+    fun secondTestingConstructor(){
+        val firstName = "Alex"
+        val middleName = "Wendy"
+        val lastName = "Bell"
+        val party = "Republican"
+        val state = "TX"
+        val id = "111"
+
+        val test = OfficialOverview(firstName, middleName, lastName, party, state, id)
+
+        assertEquals("Alex Wendy Bell", test.displayName)
+        assertEquals("Republican", test.party)
+        assertEquals("TX", test.state)
+        assertEquals("111", test.id)
     }
 }
