@@ -1,6 +1,9 @@
 package com.lambdaschool.congressdata
 
-//Goal of this test is to test the class "OfficialOverview"
+import org.junit.Test
+import kotlin.test.assertEquals
+
+//Goal of this class is to test the class "OfficialOverview"
 class OverviewUnitTest{
 
     /*
@@ -16,6 +19,20 @@ class OverviewUnitTest{
     }
      */
 
-    
+    @Test
+    fun testingConstructor(){
+        val firstName = "Patrick"
+        val middleName = "null"
+        val lastName = "Chow"
+        val party = "N/A"
+        val state = "NY"
+        val id = "123"
 
+        val test = OfficialOverview(firstName, middleName, lastName, party, state, id)
+
+        assertEquals("Patrick Chow", test.displayName)
+        assertEquals("N/A", test.party)
+        assertEquals("NY", test.state)
+        assertEquals("123", test.id)
+    }
 }
