@@ -48,3 +48,8 @@ but when you look at the CPU profiler, you'll see a number of glaring issues tha
 
 After you finish with these requirements, spend the rest of the time improving coverage on your unit tests,
  improving the UI tests and improving overall performance.
+
+ 
+ BUGS THAT WERE FIXED
+ 1. App crashes when a congressman is selected. Adjusting the constructor that requires ID in CongresspersonProfileViewModel
+ to require nothing fixes this.

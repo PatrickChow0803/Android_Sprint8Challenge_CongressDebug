@@ -35,9 +35,10 @@ class OfficialOverview {
         this.id = congresspersonOverview.id
     }
 
+    //TODO-2 Names weren't spaced properly so added a space after the first name
     private fun buildDisplayName(): String {
         val nameBuilder = StringBuilder()
-        nameBuilder.append(firstName)
+        nameBuilder.append(firstName).append(" ")
         if (middleName != "null") {
             nameBuilder.append(middleName).append(" ")
         }
