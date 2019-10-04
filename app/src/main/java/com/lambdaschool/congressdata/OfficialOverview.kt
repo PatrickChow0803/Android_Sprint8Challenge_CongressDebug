@@ -43,6 +43,8 @@ class OfficialOverview {
             nameBuilder.append(middleName).append(" ")
         }
         nameBuilder.append(lastName)
-        return nameBuilder.toString().toLowerCase()
+
+        //TODO-3 First letter of first name and last name are lower cased so I commented out the .toLowerCase()
+        return nameBuilder.toString()//.toLowerCase()
     }
 }

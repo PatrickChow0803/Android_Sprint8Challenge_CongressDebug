@@ -53,3 +53,5 @@ After you finish with these requirements, spend the rest of the time improving c
  BUGS THAT WERE FIXED
  1. App crashes when a congressman is selected. Adjusting the constructor that requires ID in CongresspersonProfileViewModel
  to require nothing fixes this.
+ 2. Added a space after first name
+ 3. Removed the lowercase for firstname and lastname
